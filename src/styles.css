@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif;
+}
+
+.track {
+  display: block;
+}
+
+.gridParent {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-rows:
+    [tracks] auto
+    [time-0800] 1fr
+    [time-0830] 1fr
+    [time-0900] 1fr
+    [time-0930] 1fr
+    [time-1000] 1fr
+    [time-1030] 1fr
+    [time-1100] 1fr
+    [time-1130] 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.session1 {
+  grid-row: time-0800 / time-0930;
+  background-color: red;
+}
+
+.session2 {
+  grid-row: time-0930 / time-1030;
+  background-color: green;
+}
+
+.session3 {
+  grid-column: span 2;
+  background-color: blue;
+}
+
+.session {
+  padding: 0.5em;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.session4 {
+  background-color: silver;
+  grid-row: time-0830 / time-1000;
+}
+
+.session5 {
+  background-color: cyan;
+  grid-row: time-0830 / time-1030;
+  grid-column: span 2;
+}
+
+.break {
+  background-color: lightcoral;
+  grid-row: time-1030 / time-1200;
+  grid-column: span 4;
+}

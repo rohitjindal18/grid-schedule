@@ -19,7 +19,7 @@ body {
     [time-1030] 1fr
     [time-1100] 1fr
     [time-1130] 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .session1 {
